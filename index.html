@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>QuickBite Cafe</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Yummy
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+
+  
+  <script>
+    // Handle form submission and show/hide sections based on login status
+    document.querySelector('form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        var password = document.getElementById('password').value;
+        if (password === 'your_password') {
+            // Correct password, show admin panel
+            document.getElementById('admin-login').style.display = 'none';
+            document.getElementById('admin-panel').style.display = 'block';
+        } else {
+            // Incorrect password, display error or redirect to login page
+            alert('Incorrect password. Please try again.');
+        }
+    });
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+         <img src="assets/img/cafelogo-removebg-preview.png" alt=""> 
+        <h1>QuickBite Cafe<span>.</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#chefs">Chefs</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <a class="btn-book-a-table" href="#book-a-table">Book a Table</a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center section-bg">
+    <div class="container">
+      <div class="row justify-content-between gy-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2 data-aos="fade-up">Indulge in<br>Our Aromatic Coffee & Fresh Bakery</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Savor the rich aroma of freshly brewed coffee and delight in the taste of our freshly baked pastries. Experience the perfect blend of flavors at our cafe.</p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#book-a-table" class="btn-book-a-table">Book a Table</a>
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+          <img src="assets/img/coverpage.jpeg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+  <main id="main">
+
+      <!-- admin page section  -->
+    <section> 
+      <section id="admin-login" class="login-container">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title text-center">Admin Login</h2>
+                            <form action="#admin-panel">
+                                <div class="form-group">
+
+                              
+                                        <label for="username">Username:</label>
+                                        <input type="text" id="username" name="username" required>
+
+                                        <button type="submit">Login</button>
+                                    </form>
+                                </div>
+                                    <label for="password">Password:</label>
+                                    <input type="password" id="password" class="form-control" required>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Panel Section -->
+    <section id="admin-panel" class="container mt-5" style="display: none;">
+        <h2 class="mb-4">Admin Panel</h2>
+        <!-- Add/Edit/Remove menu items and promotions UI can be implemented here -->
+    </section>
+
+    </section>
+     <!-- end of admin page   -->
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+    
+        <div class="section-header">
+          <h2>Discover Our Cafe & Bakery</h2>
+          <p>Explore More <span>About Us</span></p>
+        </div>
+    
+        <div class="row gy-4">
+          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/cafe-bakery.jpg);" data-aos="fade-up" data-aos-delay="150">
+            <div class="call-us position-absolute">
+              <h4>Visit Us Today</h4>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div>
+          <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Indulge in the aroma of freshly brewed coffee and the taste of our delectable pastries, handcrafted with love and care.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> Enjoy our wide selection of freshly baked goods and aromatic coffee blends.</li>
+                <li><i class="bi bi-check2-all"></i> Experience the cozy ambiance perfect for a relaxing afternoon tea.</li>
+                <li><i class="bi bi-check2-all"></i> Delight in our specialty cakes and pastries, crafted by our skilled pastry chefs.</li>
+              </ul>
+              <p>
+                Immerse yourself in the delightful combination of flavors and aromas, creating memories one cup of coffee at a time.
+              </p>
+    
+              <div class="position-relative mt-4">
+        
+          
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container" data-aos="fade-up">
+  
+          <div class="row gy-4">
+  
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="why-box">
+                      <h3>Why Choose Quickbite cafe ?</h3>
+                      <p>
+                          At Yummy Cafe & Bakery, we take pride in providing a unique dining experience. Lorem ipsum dolor sit
+                          amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                          Duis aute irure dolor in reprehenderit. Asperiores dolores sed et. Tenetur quia eos. Autem tempore
+                          quibusdam vel necessitatibus optio ad corporis.
+                      </p>
+                      <div class="text-center">
+                          <a href="#" class="more-btn">Discover More <i class="bx bx-chevron-right"></i></a>
+                      </div>
+                  </div>
+              </div><!-- End Why Box -->
+  
+              <div class="col-lg-8 d-flex align-items-center">
+                  <div class="row gy-4">
+  
+                      <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+                          <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                              <i class="bi bi-cup"></i>
+                              <h4>Handcrafted Coffee</h4>
+                              <p>Indulge in our rich and aromatic handcrafted coffee made from the finest beans.</p>
+                          </div>
+                      </div><!-- End Icon Box -->
+  
+                      <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                          <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                              <i class="bi bi-pie-chart"></i>
+                              <h4>Freshly Baked Pastries</h4>
+                              <p>Delight in our freshly baked pastries that melt in your mouth with every bite.</p>
+                          </div>
+                      </div><!-- End Icon Box -->
+  
+                      <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                          <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                              <i class="bi bi-heart"></i>
+                              <h4>Cozy Atmosphere</h4>
+                              <p>Experience the warmth of our cozy atmosphere, perfect for gatherings and relaxation.</p>
+                          </div>
+                      </div><!-- End Icon Box -->
+  
+                  </div>
+              </div>
+  
+          </div>
+  
+      </div>
+  </section>
+
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu">
+      <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+              <h2>Explore Our Menu</h2>
+              <p>Discover Our <span>Delicious Offerings</span></p>
+          </div>
+  
+          <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+  
+              <li class="nav-item">
+                  <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-coffees">
+                      <h4>Coffees</h4>
+                  </a>
+              </li><!-- End tab nav item -->
+  
+              <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-pastries">
+                      <h4>Pastries</h4>
+                  </a><!-- End tab nav item -->
+  
+          </ul>
+  
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+  
+              <div class="tab-pane fade active show" id="menu-coffees">
+  
+                  <div class="tab-header text-center">
+                      <p>Menu</p>
+                      <h3>Coffees</h3>
+                  </div>
+  
+                  <div class="row gy-5">
+  
+                      <div class="col-lg-4 menu-item">
+                          <a href="assets/img/menu/c2.jpg" class="glightbox"><img src="assets/img/menu/coffee-1.jpg" class="menu-img img-fluid" alt=""></a>
+                          <h4>Espresso</h4>
+                          <p class="ingredients">
+                              A strong and flavorful shot of pure coffee.
+                          </p>
+                          <p class="price">
+                              $3.50
+                          </p>
+                      </div><!-- Menu Item -->
+  
+                      <div class="col-lg-4 menu-item">
+                          <a href="assets/img/menu/c3.jpg" class="glightbox"><img src="assets/img/menu/coffee-2.jpg" class="menu-img img-fluid" alt=""></a>
+                          <h4>Cappuccino</h4>
+                          <p class="ingredients">
+                              Espresso mixed with steamed milk and foam.
+                          </p>
+                          <p class="price">
+                              $4.50
+                          </p>
+                      </div><!-- Menu Item -->
+  
+                      <div class="col-lg-4 menu-item">
+                          <a href="assets/img/menu/c5.webp"class="glightbox"><img src="assets/img/menu/coffee-3.jpg" class="menu-img img-fluid" alt=""></a>
+                          <h4>Latte</h4>
+                          <p class="ingredients">
+                              Espresso with a larger amount of steamed milk and a small layer of foam.
+                          </p>
+                          <p class="price">
+                              $4.00
+                          </p>
+                      </div><!-- Menu Item -->
+  
+                  </div>
+              </div>
+  
+              <div class="tab-pane fade" id="menu-pastries">
+  
+                  <div class="tab-header text-center">
+                      <p>Menu</p>
+                      <h3>Pastries</h3>
+                  </div>
+  
+                  <div class="row gy-5">
+  
+                      <div class="col-lg-4 menu-item">
+                          <a href="assets/img/menu/b1.webp" class="glightbox"><img src="assets/img/menu/pastry-1.jpg" class="menu-img img-fluid" alt=""></a>
+                          <h4>Croissant</h4>
+                          <p class="ingredients">
+                              A buttery, flaky pastry that melts in your mouth.
+                          </p>
+                          <p class="price">
+                              $2.50
+                          </p>
+                      </div><!-- Menu Item -->
+  
+                      <div class="col-lg-4 menu-item">
+                          <a href="assets/img/menu/b2.jpg" class="glightbox"><img src="assets/img/menu/pastry-2.jpg" class="menu-img img-fluid" alt=""></a>
+                          <h4>Chocolate Danish</h4>
+                          <p class="ingredients">
+                              A delightful pastry filled with chocolate and drizzled with icing.
+                          </p>
+                          <p class="price">
+                              $3.00
+                          </p>
+                      </div><!-- Menu Item -->
+  
+                      <div class="col-lg-4 menu-item">
+                          <a href="assets/img/menu/b4.jpg" class="glightbox"><img src="assets/img/menu/pastry-3.jpg" class="menu-img img-fluid" alt=""></a>
+                          <h4>Fruit Tart</h4>
+                          <p class="ingredients">
+                              A sweet pastry crust filled with custard and topped with fresh fruits.
+                          </p>
+                          <p class="price">
+                              $4.50
+                          </p>
+                      </div><!-- Menu Item -->
+  
+                  </div>
+              </div
+  <!-- End Starter Menu Content -->
+
+          <div class="tab-pane fade" id="menu-breakfast">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Breakfast</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Magnam Tiste</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $5.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Aut Luia</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $14.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Est Eligendi</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $8.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Laboriosam Direva</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $9.95
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Breakfast Menu Content -->
+
+          <div class="tab-pane fade" id="menu-lunch">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Lunch</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Magnam Tiste</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $5.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Aut Luia</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $14.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Est Eligendi</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $8.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Laboriosam Direva</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $9.95
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Lunch Menu Content -->
+
+          <div class="tab-pane fade" id="menu-dinner">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Dinner</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Magnam Tiste</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $5.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Aut Luia</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $14.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Est Eligendi</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $8.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Laboriosam Direva</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $9.95
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Dinner Menu Content -->
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Chefs</h2>
+          <p>Our <span>Proffesional</span> Chefs</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Master Chef</span>
+                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+         <!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+
+  <div class="container">
+      <div class="row gy-3">
+          <div class="col-lg-3 col-md-6 d-flex">
+              <i class="bi bi-geo-alt icon"></i>
+              <div>
+                  <h4>Visit Us</h4>
+                  <p>
+                      123 Bakery Lane <br>
+                      Coffeeville, CA 12345 - USA<br>
+                  </p>
+              </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links d-flex">
+              <i class="bi bi-telephone icon"></i>
+              <div>
+                  <h4>Contact Us</h4>
+                  <p>
+                      <strong>Phone:</strong> +1 1234 5678<br>
+                      <strong>Email:</strong> info@bakerycafe.com<br>
+                  </p>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links d-flex">
+              <i class="bi bi-clock icon"></i>
+              <div>
+                  <h4>Opening Hours</h4>
+                  <p>
+                      <strong>Mon-Fri:</strong> 7AM - 9PM<br>
+                      <strong>Sat-Sun:</strong> 8AM - 10PM
+                  </p>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Follow Us</h4>
+              <div class="social-links d-flex">
+                  <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+          </div>
+
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="copyright">
+          &copy; 2023 <strong><span>Bakery Cafe</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+  </div>
+
+</footer><!-- End Footer -->
+
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
